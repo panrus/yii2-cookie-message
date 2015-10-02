@@ -1,6 +1,7 @@
 Yii2 Cookie Message
 ===================
-This widget will show a cookie warning that is required due to an European law
+This widget will show a cookie warning that is required due to an European law.
+Based on this idea: https://github.com/bizley-code/yii2-cookiemonster
 
 Installation
 ------------
@@ -28,5 +29,9 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \golles\cookiemessage\CookieMessage::widget(); ?>
+<?php
+    echo \golles\cookiemessage\CookieMessage::widget([
+        'moreInfoLink' => ['/page/cookies'],
+    ]);
+?>
 ```

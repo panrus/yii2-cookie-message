@@ -28,10 +28,19 @@ class CookieMessage extends Widget
         'secure' => false
     ];
 
+    /**
+     * @var string the view file that will be used to render the cookie message.
+     */
     public $view = 'cookie';
 
+    /**
+     * @var array|string|null the URL for the hyperlink tag.
+     */
     public $moreInfoLink;
 
+    /**
+     * @var string the category that will be used to render the strings.
+     */
     public $translationCategory = 'frontend';
 
     /**
@@ -49,6 +58,7 @@ class CookieMessage extends Widget
 
     /**
      * Executes the widget.
+     *
      * @return string the result of widget execution to be outputted.
      */
     public function run()

@@ -20,7 +20,9 @@
     "source": "https://github.com/golles/cookiemessage"
   },
   "require": {
-    "php": ">=5.2.0"
+    "php": ">=5.2.0",
+    "yiisoft/yii2": "@stable",
+    "yiisoft/yii2-bootstrap": "@stable"
   },
   "autoload": {
     "psr-4": {

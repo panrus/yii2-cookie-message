@@ -1,12 +1,12 @@
 <?php
 
-namespace golles\cookiemessage\assets;
+namespace golles\cookiemessage;
 
 use yii\web\AssetBundle;
 
 class CookieMessageAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/golles/yii2-cookie-message/src';
+    public $sourcePath = '@vendor/golles/yii2-cookie-message/src/assets';
 
     public $js = [
         'js/CookieMessage.js'

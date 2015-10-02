@@ -55,7 +55,7 @@ class CookieMessage extends Widget
     {
         if (!$this->cookieExists()) {
             $view = $this->getView();
-            assets\CookieMessageAsset::register($view);
+            CookieMessageAsset::register($view);
             $cookie = Json::encode($this->cookie);
             $view->registerJs("CookieMessage.init($cookie);");
 

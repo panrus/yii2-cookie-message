@@ -32,6 +32,8 @@ class CookieMessage extends Widget
 
     public $moreInfoLink;
 
+    public $translationCategory = 'frontend';
+
     /**
      * Check if our cookie exists.
      *
@@ -59,6 +61,7 @@ class CookieMessage extends Widget
 
             $params = [
                 'moreInfoLink' => $this->moreInfoLink,
+                'translationCategory' => $this->translationCategory,
             ];
 
             return $this->render($this->view, $params);

@@ -37,12 +37,7 @@ class CookieMessage extends Widget
      * @var array|string|null the URL for the hyperlink tag.
      */
     public $moreInfoLink;
-
-    /**
-     * @var string the category that will be used to render the strings.
-     */
-    public $translationCategory = 'frontend';
-
+    
     /**
      * Check if our cookie exists.
      *
@@ -71,7 +66,6 @@ class CookieMessage extends Widget
 
             $params = [
                 'moreInfoLink' => $this->moreInfoLink,
-                'translationCategory' => $this->translationCategory,
             ];
 
             return $this->render($this->view, $params);

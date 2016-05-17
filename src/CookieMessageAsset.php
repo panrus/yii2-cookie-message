@@ -6,7 +6,7 @@ use yii\web\AssetBundle;
 
 class CookieMessageAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/golles/yii2-cookie-message/src/assets';
+    public $sourcePath = '@vendor/panrus/yii2-cookie-message/src/assets';
 
     public $js = [
         'js/CookieMessage.js'
